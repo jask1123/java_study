@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="7 個のリソースを削除" deleteContents="false" description="7 個のリソースを削除" element1="/compoundInterest/src/compoundInterest/CompoundInterestBean.java" element2="/compoundInterest/src/compoundInterest/CompoundInterestCalcExec.java" element3="/compoundInterest/src/compoundInterest/CompoundInterestResultBean.java" element4="/compoundInterest/src/compoundInterest/DispOutput.java" element5="/compoundInterest/src/compoundInterest/InsertValueCheck.java" element6="/compoundInterest/src/compoundInterest/Output.java" element7="/compoundInterest/src/compoundInterest/TextOutput.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="7" stamp="1681801284584"/>
+</session>

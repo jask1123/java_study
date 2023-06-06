@@ -1,0 +1,66 @@
+package compoundInterest;
+
+import java.math.BigDecimal;
+
+/**
+ * チェック機能
+ */
+public class InsertValueCheck {
+
+    /**
+     * 引数チェック
+     *
+     * @param args コマンドライン引数
+     * @throws Exception エラーメッセージ
+     */
+    public static void checkedArgsCount(String[] args) throws Exception {
+        if (!(args.length == 3)) {
+            throw new Exception("[ERROR] 元金 / 金利 / 年数 のみ指定して下さい。");
+        }
+    }
+
+    /**
+     * 元金チェック
+     *
+     * @param strPrincipal 元金(String型)
+     * @return Integer 元金(Integer型)
+     * @throws Exception エラーメッセージ
+     */
+    public static Integer checkedPrincipal(String strPrincipal) throws Exception {
+        Integer intPrincipal = Integer.parseInt(strPrincipal);
+        if (!(intPrincipal > 0 && intPrincipal <= 1_000_000_000)) {
+            throw new Exception("[ERROR]元金は1〜10億までの範囲で指定ください。");
+        }
+        return intPrincipal;
+    }
+
+    /**
+     * 金利チェック
+     *
+     * @param strRate 金利(String型)
+     * @return Integer 金利(Integer型)
+     * @throws Exception エラーメッセージ
+     */
+    public static int checkedRate(String strRate) throws Exception {
+        int intRate = Integer.parseInt(strRate);
+        if (!(intRate >= 1 && intRate <= 20)) {
+            throw new Exception("[ERROR]金利は1〜20%までの範囲で指定ください。");
+        }
+        return intRate;
+    }
+
+    /**
+     * 年数チェック
+     *
+     * @param strYear 年数
+     * @return Integer 年数(Integer型)
+     * @throws Exception
+     */
+    public static Integer checkedYear(String strYear) throws Exception {
+        Integer intYear = Integer.parseInt(strYear);
+        if (!(intYear > 0 && intYear <= 20)) {
+            throw new Exception("[ERROR]年数は1〜20までの範囲で指定ください。");
+        }
+        return intYear;
+    }
+}

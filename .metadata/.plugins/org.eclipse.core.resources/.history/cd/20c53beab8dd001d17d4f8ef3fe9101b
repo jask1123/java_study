@@ -1,0 +1,28 @@
+package compoundInterest;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+public class CompoundInterestResultBean implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private int everyMonth;
+    private BigDecimal totalInterest;
+
+    public int getEveryMonth() {
+        return everyMonth;
+    }
+
+    public void setEveryMonth(int everyMonth) {
+        this.everyMonth = everyMonth;
+    }
+
+    public BigDecimal getTotalInterest() {
+        return totalInterest;
+    }
+
+    public void setTotalInterest(BigDecimal totalInterest) {
+        this.totalInterest = totalInterest;
+    }
+}

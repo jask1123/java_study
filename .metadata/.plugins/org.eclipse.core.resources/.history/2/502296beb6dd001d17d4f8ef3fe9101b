@@ -1,0 +1,56 @@
+package compoundInterest;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+
+public class CompoundInterestBean implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 元金データ
+     */
+    private BigDecimal principal;
+
+    /**
+     * 金利データ
+     */
+    private int rate;
+
+    /**
+     * 年数データ
+     */
+    private int year;
+
+    /**
+     * @param principal 元金データ
+     * @param rate2      金利データ
+     * @param year      年数データ
+     */
+    public CompoundInterestBean(BigDecimal principal, int rate2, int year) {
+        this.principal = principal;
+        this.rate = rate2;
+        this.year = year;
+    }
+
+    /**
+     * 複利計算
+     *
+     * @return resultBeanArray 複利計算結果データ
+     */
+    public ArrayList<CompoundInterestResultBean> compoundInterestCalc() {
+        ArrayList<CompoundInterestResultBean> resultBeanArray = new ArrayList<>();
+        int targetMonth = this.year * 12;
+        BigDecimal totalInterest = this.principal;
+        for (int tmpMonth = 0; tmpMonth < targetMonth; tmpMonth++) {
+            CompoundInterestResultBean resultBean = new CompoundInterestResultBean();
+            resultBean.setEveryMonth(tmpMonth);
+            resultBean.setTotalInterest(totalInterest);
+            resultBeanArray.add(resultBean);
+
+            BigDecimal monthlyInterest = totalInterest.multiply(rate.divide(new BigDecimal("12"), 10, BigDecimal.ROUND_HALF_UP));
+            totalInterest = totalInterest.add(monthlyInterest);
+        }
+        return resultBeanArray;
+    }
+}

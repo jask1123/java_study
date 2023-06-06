@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;CompoundInterestBean.java, CompoundInterestCalcExec.java, CompoundInterestResultBean.java, DispOutput.java, InsertValueCheck.java, Output.java, TextOutput.java&apos; を &apos;compoundInterest&apos; に移動" description="7 個のリソースを &apos;compoundInterest&apos; に移動" destination="src/compoundInterest" element1="src/CompoundInterestBean.java" element2="src/CompoundInterestCalcExec.java" element3="src/CompoundInterestResultBean.java" element4="src/DispOutput.java" element5="src/InsertValueCheck.java" element6="src/Output.java" element7="src/TextOutput.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="7" stamp="1681786014626" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+package sample1;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginController extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String ninsyo1 = request.getParameter("ninsyoName");
+        String ninsyo2 = request.getParameter("ninsyoPassword");
+
+        IdCheck idCheck = new IdCheck();
+        IdBean idBean = idCheck.getIdData(ninsyo1, ninsyo2);
+
+        if (idBean != null) {
+            request.setAttribute("idBean", idBean);
+            request.getRequestDispatcher("LoginOk.jsp").forward(request, response);
+        } else {
+            // ログイン失敗の処理
+            // エラーメッセージの表示など
+        }
+    }
+}

@@ -1,0 +1,32 @@
+package compoundInterest;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+/**
+ * テキスト出力クラス
+ *
+ */
+public class TextOutput implements Output {
+
+    @Override
+    public void outputExec(ArrayList<CompoundInterestResultBean> resultBeanArray) throws IOException {
+        //最後の複利計算結果データ取得
+        CompoundInterestResultBean lastResultBean = resultBeanArray.get(resultBeanArray.size() - 1);
+        int lastTotalInterest = lastResultBean.getTotalInterest();
+
+        File file = new File("result.txt");
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+
+        //行単位でデータを出力する
+        for (CompoundInterestResultBean result : resultBeanArray) {
+            String strTotalInterest = String.format("%,3d", result.getTotalInterest());
+            if (lastTotalInterest == result.getTotalInterest()) {
+                bw.write("-------------------------------\n");
+                bw.write(result.getEveryMonth() + "ヶ月目:" + strTotalInterest + "\n");
+                bw.write("-------------------------------\n");
+            } else {

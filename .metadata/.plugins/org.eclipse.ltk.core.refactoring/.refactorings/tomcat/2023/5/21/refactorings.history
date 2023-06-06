@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;tomcat/src/main/webapp/NewFile.jsp&apos; を &apos;comment.jsp&apos; に変更します" description="リソース &apos;NewFile.jsp&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/NewFile.jsp" name="comment.jsp" stamp="1684812234689" updateReferences="true"/>
+</session>

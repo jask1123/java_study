@@ -1,0 +1,21 @@
+package sample1;
+
+public class IdCheck {
+
+    public IdBean getIdData(String name, String password) {
+        IdBean bean = new IdBean();
+        String[] validNames = {"ABC", "DEF", "GHI"};
+        String[] validPasswords = {"123", "456", "789"};
+
+        for (int i = 0; i < validNames.length; i++) {
+            if (validNames[i].equals(name) && validPasswords[i].equals(password)) {
+                bean.setId(9999);
+                bean.setName(name);
+                bean.setPassword(password);
+                return bean;
+            }
+        }
+
+        return null;
+    }
+}

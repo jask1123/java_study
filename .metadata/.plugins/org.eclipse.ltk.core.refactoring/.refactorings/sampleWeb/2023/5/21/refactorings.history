@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="&apos;META-INF, WEB-INF, NewFile.jsp&apos; を &apos;webServer&apos; に移動" description="3 個のリソースを &apos;webServer&apos; に移動" destination="webServer" element1="src/main/webapp/META-INF" element2="src/main/webapp/WEB-INF" element3="src/main/webapp/NewFile.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1684806776872" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;sampleWeb/webServer&apos; を &apos;WebContent&apos; に変更します" description="リソース &apos;webServer&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="webServer" name="WebContent" stamp="1684807428482" updateReferences="true"/>
+</session>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- web.xml -->
+
+<web-app>
+    <servlet>
+        <servlet-name>answer</servlet-name>
+        <servlet-class>sample1.AnswerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>answer</servlet-name>
+        <url-pattern>/AnswerServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>mypageservlet</servlet-name>
+        <servlet-class>MyPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mypageservlet</servlet-name>
+        <url-pattern>/MyPageServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

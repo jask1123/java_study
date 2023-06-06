@@ -1,0 +1,23 @@
+package sample1;
+
+public class IdBean {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+	public void setId(int i) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	public void setPassword(String password) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+}

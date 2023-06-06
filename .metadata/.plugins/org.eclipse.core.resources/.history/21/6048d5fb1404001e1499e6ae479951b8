@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>ログイン</title>
+</head>
+<body>
+  <form method="post" action="tomcat/build/classes/sample1/LoginController.class">
+    <p>名前を入力してください</p>
+    <input type="text" name="ninsyoName">
+    <p>パスワードを入力してください</p>
+    <input type="password" name="ninsyoPassword"><br><br>
+    <input type="submit" value="ログイン">
+  </form>
+</body>
+</html>

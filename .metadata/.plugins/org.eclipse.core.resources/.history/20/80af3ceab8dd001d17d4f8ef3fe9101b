@@ -1,0 +1,18 @@
+package compoundInterest;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+/**
+ * 出力インターフェース
+ *
+ */
+public interface Output {
+    /**
+     * 出力実行
+     *
+     * @param resultBeanArray 複利計算結果データ
+     * @throws IOException
+     */
+    public void outputExec(ArrayList<CompoundInterestResultBean> resultBeanArray) throws IOException;
+}

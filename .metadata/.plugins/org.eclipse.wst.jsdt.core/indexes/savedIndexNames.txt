@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/user/Documents/日本工学院八王子専門学校/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1421261058.index
+2266729508.index
+3943658788.index
+3829961077.index
+2508701233.index
+1735866800.index
+1754861339.index
