@@ -23,9 +23,9 @@ public class MyPageServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>自己紹介</h1>");
-            out.println("<p>名前：伊藤翼未</p>");
-            out.println("<p>身長：176 cm</p>");
-            out.println("<p>体重：62 kg</p>");
+            out.println("<p>名前：田中太郎でよーん</p>");
+            out.println("<p>身長：190 cm</p>");
+            out.println("<p>体重：89 kg</p>");
             out.println("<p>趣味：体を動かすこと</p>");
             out.println("</body>");
             out.println("</html>");
