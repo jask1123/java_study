@@ -26,4 +26,13 @@
         <servlet-name>answer</servlet-name>
         <url-pattern>/AnswerServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ScopeServlet</servlet-name>
+        <servlet-class>sample1.ScopeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScopeServlet</servlet-name>
+        <url-pattern>/ScopeServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
